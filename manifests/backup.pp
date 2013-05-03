@@ -34,7 +34,6 @@ class mysql::backup (
   database_user { "${backupuser}@localhost":
     ensure        => $ensure,
     password_hash => mysql_password($backuppassword),
-    provider      => 'mysql',
     require       => Class['mysql::config'],
   }
 

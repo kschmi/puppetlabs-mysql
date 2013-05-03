@@ -52,7 +52,6 @@ class mysql::server (
       name     => $service_name,
       enable   => $enabled,
       require  => Package['mysql-server'],
-      provider => $service_provider,
     }
   }
 }

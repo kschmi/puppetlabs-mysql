@@ -22,7 +22,6 @@ class mysql::ruby (
   package{ 'ruby_mysql':
     ensure   => $package_ensure,
     name     => $package_name,
-    provider => $package_provider,
   }
 
 }
